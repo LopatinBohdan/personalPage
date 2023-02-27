@@ -1,25 +1,19 @@
 import logo from './logo.svg';
 import './App.css';
+import Person from './components/person-info';
+import CityInfo from './components/city';
+
+
+
 
 function App() {
+  const arr=[{id:1, name:"name1"}, {id:2, name:"name2"}];
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <>
+      {/* <Person></Person> */}
+      <CityInfo data={arr}></CityInfo>
+    </>
+  )
 }
 
 export default App;
